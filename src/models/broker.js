@@ -3,8 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   const Broker = sequelize.define(
     'Broker',
     {
-      name: DataTypes.STRING,
-      allowNull: false
+      name: { type: DataTypes.STRING, allowNull: false }
     },
     {}
   );
